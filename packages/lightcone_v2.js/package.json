@@ -13,7 +13,9 @@
   "scripts": {
     "dev": "rimraf dist && tsc",
     "lint": "prettier --write \"src/**/*.ts\"",
-    "test": "mocha -r ts-node/register --project tsconfig.json test/*.ts"
+    "test": "mocha -r ts-node/register --project tsconfig.json test/*.ts",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "ethereum",
@@ -44,7 +46,8 @@
     "hdkey": "1.1.1",
     "isomorphic-fetch": "2.2.1",
     "nodeunit": "^0.11.3",
-    "snarkjs": "0.1.20"
+    "snarkjs": "0.1.20",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
@@ -72,5 +75,6 @@
     "typescript": "^3.2.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.1.0"
-  }
+  },
+  "snyk": true
 }
