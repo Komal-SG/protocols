@@ -11,7 +11,9 @@
     "compile": "truffle compile",
     "migrate": "truffle migrate",
     "ganache": "ganache-cli",
-    "truffle": "truffle"
+    "truffle": "truffle",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "lrc",
@@ -28,6 +30,8 @@
     "lodash": "^4.17.11",
     "request-promise": "^4.2.2",
     "truffle": "^5.0.2",
-    "web3": "^1.0.0-beta.37"
-  }
+    "web3": "^1.0.0-beta.37",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
