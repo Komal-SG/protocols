@@ -13,9 +13,10 @@
     "test": "mocha -r ts-node/register test/**/*.ts",
     "compile": "tsc -p .; copyfiles ABI/**/* build",
     "fix": "gts fix",
-    "prepare": "npm run compile",
+    "prepare": "npm run snyk-protect && npm run compile",
     "pretest": "npm run compile",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run compile",
+    "snyk-protect": "snyk protect"
   },
   "keywords": [],
   "author": "loopring",
@@ -47,6 +48,8 @@
     "ethereumjs-util": "^6.1.0",
     "express": "^4.16.3",
     "lodash": ">=4.17.11",
-    "web3": "^1.0.0-beta.48"
-  }
+    "web3": "^1.0.0-beta.48",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
