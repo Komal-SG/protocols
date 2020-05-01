@@ -33,7 +33,9 @@
     "coverage": "./node_modules/.bin/solidity-coverage",
     "truffle": "truffle",
     "clean": "rm -rf build/contracts",
-    "v": "node -v"
+    "v": "node -v",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "ISC",
   "devDependencies": {
@@ -86,6 +88,8 @@
     "snarkjs": "0.1.20",
     "truffle": "5.1.2",
     "truffle-hdwallet-provider": "web3-one",
-    "typedarray-to-buffer": "^3.1.5"
-  }
+    "typedarray-to-buffer": "^3.1.5",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
