@@ -20,7 +20,9 @@
     "build": "rm -rf build/contracts && truffle compile",
     "migrate": "npm run transpile && truffle migrate",
     "deploy": "npm run migrate --network kovan",
-    "testrpc": "ganache-cli"
+    "testrpc": "ganache-cli",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "ISC",
   "devDependencies": {
@@ -61,6 +63,8 @@
     "js-sha3": "^0.7.0",
     "lodash": "^4.17.14",
     "npm": "^6.11.3",
-    "web3": "1.2.4"
-  }
+    "web3": "1.2.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
