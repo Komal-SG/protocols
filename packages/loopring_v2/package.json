@@ -69,7 +69,7 @@
     "js-sha3": "^0.8.0",
     "lodash": "^4.17.14",
     "openzeppelin-solidity": "^2.2.0",
-    "protocol2-js": "0.2.26",
+    "protocol2-js": "0.4.5",
     "sha3": "^2.0.0",
     "truffle": "5.1.2",
     "truffle-hdwallet-provider": "web3-one",
